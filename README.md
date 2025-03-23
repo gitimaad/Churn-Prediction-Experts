@@ -1,4 +1,4 @@
-📈 Stock Market Data Analysis and Visualization 📊
+📈 Stock Market Data Analysis and Visualization
 ==================================================
 
 This repository contains a Python script for fetching, processing, and analyzing stock market data from Yahoo Finance. The script also includes functionality to visualize the data using various charts and save the processed data into a MySQL database. The project is designed to help users understand stock market trends, volatility, and correlations between trading volume and price movements.
