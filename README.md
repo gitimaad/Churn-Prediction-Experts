@@ -12,25 +12,21 @@ This repository contains a Python script for fetching, processing, and analyzing
 
 2.  Features
 
-3.  Installation
+3.  Data Processing
 
-4.  Usage
+4.  Visualization
 
-5.  Data Processing
+5.  Database Integration
 
-6.  Visualization
+6.  Technical Indicators
 
-7.  Database Integration
+7.  Support and Resistance Levels
 
-8.  Technical Indicators
+8. Volume Correlation Analysis
 
-9.  Support and Resistance Levels
+9. Merging Data
 
-10. Volume Correlation Analysis
-
-11. Merging Data
-
-12. Contact Me
+10. Contact Me
 
 * * * * *
 
@@ -59,63 +55,6 @@ This project is part of the **Construct Week - B43: Python Phase**. The goal is
 -   **📈 Volume Correlation Analysis**: Analyzes the correlation between trading volume and price movements.
 
 -   **🔗 Data Merging**: Merges data from multiple CSV files into a single CSV file and exports it to MySQL.
-
-* * * * *
-
-🛠️ Installation
-----------------
-
-To run this script, you need to have Python installed on your system. Follow these steps to set up the environment:
-
-1.  **Clone the repository**:
-
-    bash
-
-    Copy
-
-    git clone https://github.com/yourusername/stock-market-analysis.git
-    cd stock-market-analysis
-
-2.  **Install the required libraries**:
-
-    bash
-
-    Copy
-
-    pip install -r requirements.txt
-
-3.  **Set up MySQL**:
-
-    -   Install MySQL on your system if not already installed.
-
-    -   Create a database named `stock_data`.
-
-    -   Update the MySQL connection details in the script if necessary.
-
-* * * * *
-
-🖥️ Usage
----------
-
-To run the script, simply execute the following command:
-
-bash
-
-Copy
-
-python script.py
-
-The script will perform the following tasks:
-
-1.  Fetch historical stock data for the specified companies.
-
-2.  Process the data to calculate daily returns, moving averages, and technical indicators.
-
-3.  Save the processed data into the MySQL database.
-
-4.  Generate visualizations for stock price trends, volatility, and volume correlations.
-
-5.  Merge data from multiple CSV files into a single CSV file and export it to MySQL.
 
 * * * * *
 
@@ -197,8 +136,8 @@ The script merges data from multiple CSV files into a single CSV file and export
 
 If you have any questions, suggestions, or just want to connect, feel free to reach out to me:
 
--   **📧 Email**: [your.email@example.com](hamadsaad1234@gmail.com/)
+-   **📧 Email**: [hamadsaad1234@gmail.com](hamadsaad1234@gmail.com/)
 
--   **🔗 LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/mohammedimaad/)
+-   **🔗 LinkedIn**: [Mohammed Imaad](https://www.linkedin.com/in/mohammedimaad/)
 
 * * * * *
