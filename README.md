@@ -1,45 +1,82 @@
-# Python Phase - Stock Market Analysis and Visualization
+📈 Stock Market Data Analysis and Visualization 📊
+==================================================
 
-Welcome to the **Python Phase** project! This repository contains a comprehensive Jupyter Notebook that performs stock market analysis and visualization using data scraped from Yahoo Finance. The project is designed to help you understand historical stock prices, calculate technical indicators, and create insightful visualizations.
+This repository contains a Python script for fetching, processing, and analyzing stock market data from Yahoo Finance. The script also includes functionality to visualize the data using various charts and save the processed data into a MySQL database. The project is designed to help users understand stock market trends, volatility, and correlations between trading volume and price movements.
 
-## 📋 Table of Contents
+* * * * *
 
-- [Project Overview](#project-overview)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Data Fetching](#data-fetching)
-- [Data Processing](#data-processing)
-- [Visualization](#visualization)
-- [Technical Indicators](#technical-indicators)
-- [Database Integration](#database-integration)
-- [Contributing](#contributing)
-- [License](#license)
+📋 Table of Contents
+--------------------
 
-## 🌟 Project Overview
+1.  Introduction
 
-This project focuses on analyzing historical stock data from major companies using the `yfinance` library. It includes data fetching, processing, and visualization techniques to help you gain insights into stock market trends. The project also integrates with a MySQL database to store and retrieve stock data efficiently.
+2.  Features
 
-## 🚀 Features
+3.  Installation
 
-- **Data Fetching**: Fetch historical stock data from Yahoo Finance for top companies.
-- **Data Processing**: Clean and process raw stock data, including filling missing values and calculating daily returns.
-- **Visualization**: Create various charts to visualize stock price trends, moving averages, and candlestick charts.
-- **Technical Indicators**: Calculate and visualize technical indicators like RSI, moving averages, and Bollinger Bands.
-- **Database Integration**: Save processed stock data into a MySQL database for future analysis.
-- **Logging**: Implement logging to track script execution and debug errors.
+4.  Usage
 
-## 🛠️ Installation
+5.  Data Processing
 
-To get started with this project, follow these steps:
+6.  Visualization
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/your-username/python-phase.git
-   cd python-phase
+7.  Database Integration
 
-1.  **Install Required Libraries**:\
-    Ensure you have Python installed, then install the required libraries using pip:
+8.  Technical Indicators
+
+9.  Support and Resistance Levels
+
+10. Volume Correlation Analysis
+
+11. Merging Data
+
+12. Contact Me
+
+* * * * *
+
+🌟 Introduction
+---------------
+
+This project is part of the **Construct Week - B43: Python Phase**. The goal is to perform web scraping from the Yahoo Finance website, process the data, and create visualizations to analyze stock market trends. The script fetches historical stock prices for a list of top companies, processes the data to calculate technical indicators, and visualizes the data using various charts. The processed data is then saved into a MySQL database for further analysis.
+
+* * * * *
+
+🚀 Features
+-----------
+
+-   **📥 Data Fetching**: Fetches historical stock data from Yahoo Finance for a list of top companies.
+
+-   **🔧 Data Processing**: Processes the raw data to calculate daily returns, moving averages, and technical indicators.
+
+-   **📊 Visualization**: Creates various charts to visualize stock price trends, volatility, and volume correlations.
+
+-   **💾 Database Integration**: Saves the processed data into a MySQL database for further analysis.
+
+-   **📈 Technical Indicators**: Calculates technical indicators such as RSI, moving averages, and Bollinger Bands.
+
+-   **📉 Support and Resistance Levels**: Calculates and visualizes support and resistance levels using candlestick charts.
+
+-   **📈 Volume Correlation Analysis**: Analyzes the correlation between trading volume and price movements.
+
+-   **🔗 Data Merging**: Merges data from multiple CSV files into a single CSV file and exports it to MySQL.
+
+* * * * *
+
+🛠️ Installation
+----------------
+
+To run this script, you need to have Python installed on your system. Follow these steps to set up the environment:
+
+1.  **Clone the repository**:
+
+    bash
+
+    Copy
+
+    git clone https://github.com/yourusername/stock-market-analysis.git
+    cd stock-market-analysis
+
+2.  **Install the required libraries**:
 
     bash
 
@@ -47,172 +84,121 @@ To get started with this project, follow these steps:
 
     pip install -r requirements.txt
 
-2.  **Set Up MySQL Database**:
+3.  **Set up MySQL**:
 
-    -   Install MySQL and create a database named `stock_data`.
+    -   Install MySQL on your system if not already installed.
 
-    -   Update the database connection details in the notebook:
+    -   Create a database named `stock_data`.
 
-        python
+    -   Update the MySQL connection details in the script if necessary.
 
-        Copy
-
-        host = '127.0.0.1'
-        user = 'root'
-        password = 'MySQL12345'
-        database = 'stock_data'
+* * * * *
 
 🖥️ Usage
 ---------
 
-1.  **Open the Jupyter Notebook**:
+To run the script, simply execute the following command:
 
-    bash
-
-    Copy
-
-    jupyter notebook Python_Phase.ipynb
-
-2.  **Run the Notebook**:\
-    Execute each cell in the notebook to fetch, process, and visualize stock data. The notebook is well-commented to guide you through each step.
-
-📊 Data Fetching
-----------------
-
-The project fetches historical stock data for top companies like Apple, Microsoft, and Amazon using the `yfinance` library. The data includes:
-
--   **Stock Prices**: Open, High, Low, Close, and Volume.
-
--   **Date Range**: From January 1, 2000, to March 18, 2025.
-
-python
+bash
 
 Copy
 
-import yfinance as yf
+python script.py
 
-stocks = ['AAPL', 'MSFT', 'NVDA', 'KO', 'AMZN', 'META', 'TSLA', 'GOOGL', 'BRK-B', '2222.SR']
-start_date = '2000-01-01'
-end_date = '2025-03-18'
+The script will perform the following tasks:
 
-data = yf.download(stocks, start=start_date, end=end_date, group_by='ticker', progress=False)
+1.  Fetch historical stock data for the specified companies.
 
-🔄 Data Processing
+2.  Process the data to calculate daily returns, moving averages, and technical indicators.
+
+3.  Save the processed data into the MySQL database.
+
+4.  Generate visualizations for stock price trends, volatility, and volume correlations.
+
+5.  Merge data from multiple CSV files into a single CSV file and export it to MySQL.
+
+* * * * *
+
+🔧 Data Processing
 ------------------
 
-The raw stock data is processed to calculate:
+The script processes the raw stock data to calculate the following:
 
--   **Daily Returns**: Percentage change in closing prices.
+-   **📅 Daily Returns**: The percentage change in the closing price from one day to the next.
 
--   **Moving Averages**: 50-day and 200-day simple moving averages.
+-   **📊 50-day Simple Moving Average (SMA)**: A short-term trend indicator.
 
--   **Technical Indicators**: RSI, Bollinger Bands, etc.
+-   **📈 200-day Simple Moving Average (SMA)**: A long-term trend indicator.
 
-python
+-   **📉 Relative Strength Index (RSI)**: A momentum oscillator that measures the speed and change of price movements.
 
-Copy
+-   **📊 Bollinger Bands**: A volatility indicator that consists of a middle band (SMA) and two outer bands (standard deviations away from the SMA).
 
-def process_stock_data(raw_data):
-    raw_data.ffill(inplace=True)
-    processed_data = {}
-    for stock in stocks:
-        if stock in raw_data.columns.get_level_values(0):
-            stock_data = raw_data[stock].copy()
-            stock_data['Daily Return'] = stock_data['Close'].pct_change()
-            stock_data['50-day Simple Moving Average'] = stock_data['Close'].rolling(window=50).mean()
-            stock_data['200-day Simple Moving Average'] = stock_data['Close'].rolling(window=200).mean()
-            processed_data[stock] = stock_data
-    return processed_data
+* * * * *
 
-📈 Visualization
+📊 Visualization
 ----------------
 
-The project includes various visualizations to help you understand stock trends:
+The script generates the following visualizations:
 
--   **Stock Price Trends**: Line charts showing closing prices and moving averages.
+-   **📈 Stock Price Trends**: Line charts showing the closing price along with 50-day and 200-day SMAs.
 
--   **Candlestick Charts**: Visualize support and resistance levels.
+-   **🕯️ Candlestick Charts**: Candlestick charts with support and resistance levels, breakout, and breakdown points.
 
--   **Volume Correlation**: Scatter plots to analyze the correlation between trading volume and price movement.
+-   **📊 Volume Correlation**: Scatter plots showing the correlation between trading volume and price changes.
 
-python
+-   **📉 Volatility**: Histograms showing the distribution of daily returns.
 
-Copy
+* * * * *
 
-import matplotlib.pyplot as plt
-import seaborn as sns
-
-def chart_stock_trends(chart_data, stock):
-    if stock not in chart_data:
-        logging.warning(f'No data available for {stock}. Skipping this plot.')
-        return
-    data = chart_data[stock]
-    plt.figure(figsize=(12, 8))
-    plt.plot(data.index, data['Close'], label='Closing Price', color='blue', linewidth=1.5)
-    plt.plot(data.index, data['50-day Simple Moving Average'], label='50-day SMA', color='red', linestyle='dashed', linewidth=1)
-    plt.plot(data.index, data['200-day Simple Moving Average'], label='200-day SMA', color='green', linestyle='dashed', linewidth=1)
-    plt.title(f'{stock} - Price Trend and Moving Averages')
-    plt.xlabel('Date')
-    plt.ylabel('Stock Price (USD)')
-    plt.legend()
-    plt.grid(True)
-    plt.show()
-
-📉 Technical Indicators
+💾 Database Integration
 -----------------------
 
-The project calculates and visualizes several technical indicators:
+The script integrates with a MySQL database to store the processed stock data. The data is saved in separate tables for each stock, and a merged table is created to combine data from all stocks.
 
--   **Relative Strength Index (RSI)**: Measures the magnitude of recent price changes.
+* * * * *
 
--   **Bollinger Bands**: Volatility bands placed above and below a moving average.
+📈 Technical Indicators
+-----------------------
 
-python
+The script calculates the following technical indicators:
 
-Copy
+-   **📉 RSI**: Measures the magnitude of recent price changes to evaluate overbought or oversold conditions.
 
-def calculate_technical_indicators(data):
-    window_length = 14
-    delta = data['Close'].diff()
-    gain = (delta.where(delta > 0, 0)).rolling(window=window_length).mean()
-    loss = (-delta.where(delta < 0, 0)).rolling(window=window_length).mean()
-    rs = gain / loss
-    data['RSI'] = 100 - (100 / (1 + rs))
-    data['20-day Simple Moving Average'] = data['Close'].rolling(window=20).mean()
-    data["Upper Band"] = data["20-day Simple Moving Average"] + (data["Close"].rolling(window=20).std() * 2)
-    data["Lower Band"] = data["20-day Simple Moving Average"] - (data["Close"].rolling(window=20).std() * 2)
-    return data
+-   **📊 Bollinger Bands**: Helps identify volatility and potential price breakouts.
 
-🗃️ Database Integration
-------------------------
+-   **📈 Moving Averages**: Used to identify trends and potential support/resistance levels.
 
-The processed stock data is saved into a MySQL database for future analysis. The project uses SQLAlchemy to interact with the database.
+* * * * *
 
-python
+📉 Support and Resistance Levels
+--------------------------------
 
-Copy
+The script calculates support and resistance levels using a rolling window and visualizes them on candlestick charts. Breakouts and breakdowns are also marked on the charts.
 
-from sqlalchemy import create_engine
+* * * * *
 
-def save_database(stock_data, database_url="mysql+mysqlconnector://root:MySQL12345@127.0.0.1/stock_data"):
-    engine = create_engine(database_url)
-    for stock, data in stock_data.items():
-        data['date'] = data.index
-        data.to_sql(name=stock.lower(), con=engine, if_exists='replace', index=False)
+📊 Volume Correlation Analysis
+------------------------------
 
-## 🎯 Conclusion
+The script analyzes the correlation between trading volume and price changes using scatter plots. The correlation coefficient is calculated and logged for each stock.
 
-The **Python Phase** project offers a robust framework for analyzing and visualizing stock market data using Python. By leveraging the `yfinance` library, the project fetches historical stock data, processes it to calculate key metrics like daily returns and moving averages, and generates insightful visualizations. The integration with a MySQL database ensures that the processed data can be stored and retrieved efficiently for future analysis.
+* * * * *
 
-### Key Takeaways:
-- **Data-Driven Insights**: The project provides a clear understanding of stock market trends through detailed visualizations and technical indicators.
-- **Efficient Data Handling**: With data processing and database integration, the project ensures that large datasets are managed effectively.
-- **Customizable and Extendable**: The modular design of the notebook allows for easy customization and extension to include additional stocks or indicators.
+🔗 Merging Data
+---------------
 
-### Future Enhancements:
-- **Real-Time Data**: Integrate real-time data fetching to provide up-to-date market insights.
-- **Machine Learning**: Incorporate machine learning models to predict future stock prices based on historical data.
-- **User Interface**: Develop a user-friendly interface to make the tool accessible to non-technical users.
+The script merges data from multiple CSV files into a single CSV file and exports it to the MySQL database. This is useful for creating a consolidated view of the stock data.
 
-### Final Thoughts:
-Whether you're a data enthusiast, a financial analyst, or a developer looking to explore stock market data, this project serves as a valuable resource. By following the steps outlined in this README, you can set up the project, analyze stock data, and generate visualizations that provide actionable insights.
+* * * * *
+
+📧 Contact Me
+-------------
+
+If you have any questions, suggestions, or just want to connect, feel free to reach out to me:
+
+-   **📧 Email**: [your.email@example.com](hamadsaad1234@gmail.com/)
+
+-   **🔗 LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/mohammedimaad/)
+
+* * * * *
