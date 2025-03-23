@@ -1,94 +1,90 @@
-📈 Stock Market Analysis: Trends, Volatility, and Insights
-Welcome to the Stock Market Analysis repository! This project focuses on analyzing the historical stock data of top companies, uncovering trends, and visualizing key metrics to provide actionable insights. Using Python, MySQL, and advanced visualization libraries, we explore stock price movements, technical indicators, and market behavior.
+# 📈 Stock Market Analysis: Trends, Volatility, and Insights
 
-🚀 Project Overview
-The goal of this project is to analyze the historical stock data of 10 major companies and derive meaningful insights into their performance. Key tasks include:
+Welcome to the **Stock Market Analysis** repository! This project focuses on analyzing the historical stock data of top companies, uncovering trends, and visualizing key metrics to provide actionable insights. Using Python, MySQL, and advanced visualization libraries, we explore stock price movements, technical indicators, and market behavior.
 
-Fetching historical stock data using Yahoo Finance API.
+---
 
-Cleaning and processing the data to calculate technical indicators like Moving Averages, RSI, and Support/Resistance Levels.
+## 🚀 Project Overview
 
-Visualizing stock trends, volatility, and volume-price correlations.
+The goal of this project is to analyze the historical stock data of **10 major companies** and derive meaningful insights into their performance. Key tasks include:
 
-Storing the processed data in a MySQL database for further analysis.
+- Fetching historical stock data using **Yahoo Finance API**.
+- Cleaning and processing the data to calculate technical indicators like **Moving Averages**, **RSI**, and **Support/Resistance Levels**.
+- Visualizing stock trends, volatility, and volume-price correlations.
+- Storing the processed data in a **MySQL database** for further analysis.
+- Creating interactive visualizations using **Plotly** and **Seaborn**.
 
-Creating interactive visualizations using Plotly and Seaborn.
+---
 
-🛠️ Tools and Technologies
-Python: For data fetching, cleaning, processing, and analysis.
+## 🛠️ Tools and Technologies
 
-Libraries: yfinance, pandas, numpy, matplotlib, seaborn, plotly, sqlalchemy, mysql.connector.
+- **Python**: For data fetching, cleaning, processing, and analysis.
+  - Libraries: `yfinance`, `pandas`, `numpy`, `matplotlib`, `seaborn`, `plotly`, `sqlalchemy`, `mysql.connector`.
+- **MySQL**: For storing and querying the processed stock data.
+- **Plotly**: For creating interactive candlestick charts and visualizations.
+- **Seaborn/Matplotlib**: For static visualizations like histograms and scatter plots.
+- **Power BI** (Optional): For creating dashboards and advanced visualizations (can be integrated later).
 
-MySQL: For storing and querying the processed stock data.
+---
 
-Plotly: For creating interactive candlestick charts and visualizations.
+## 📊 Key Insights
 
-Seaborn/Matplotlib: For static visualizations like histograms and scatter plots.
+1. **Stock Price Trends**:
+   - Analyzed the closing prices of stocks over time.
+   - Calculated **50-day** and **200-day Simple Moving Averages (SMA)** to identify short-term and long-term trends.
+   
+2. **Volatility Analysis**:
+   - Visualized daily returns using histograms to understand stock volatility.
+   - Identified patterns in price fluctuations.
 
-Power BI (Optional): For creating dashboards and advanced visualizations (can be integrated later).
+3. **Technical Indicators**:
+   - Calculated **Relative Strength Index (RSI)** to assess overbought or oversold conditions.
+   - Plotted **Support** and **Resistance Levels** to identify key price points.
 
-📊 Key Insights
-Stock Price Trends:
+4. **Volume-Price Correlation**:
+   - Analyzed the relationship between trading volume and price changes.
+   - Computed correlation coefficients to measure the strength of the relationship.
 
-Analyzed the closing prices of stocks over time.
+5. **Candlestick Charts**:
+   - Created interactive candlestick charts with support/resistance levels and breakout/breakdown markers.
 
-Calculated 50-day and 200-day Simple Moving Averages (SMA) to identify short-term and long-term trends.
+---
 
-Volatility Analysis:
+## 📈 Visualizations
 
-Visualized daily returns using histograms to understand stock volatility.
+1. **Stock Price Trends**:
+   - Line charts showing closing prices along with 50-day and 200-day SMAs.
+   
+2. **Candlestick Charts**:
+   - Interactive charts with support/resistance levels, breakouts, and breakdowns.
 
-Identified patterns in price fluctuations.
+3. **Volume-Price Correlation**:
+   - Scatter plots to visualize the relationship between trading volume and price changes.
 
-Technical Indicators:
+4. **Daily Return Distribution**:
+   - Histograms with KDE (Kernel Density Estimation) to analyze stock volatility.
 
-Calculated Relative Strength Index (RSI) to assess overbought or oversold conditions.
+---
 
-Plotted Support and Resistance Levels to identify key price points.
-
-Volume-Price Correlation:
-
-Analyzed the relationship between trading volume and price changes.
-
-Computed correlation coefficients to measure the strength of the relationship.
-
-Candlestick Charts:
-
-Created interactive candlestick charts with support/resistance levels and breakout/breakdown markers.
-
-📈 Visualizations
-Stock Price Trends:
-
-Line charts showing closing prices along with 50-day and 200-day SMAs.
-
-Candlestick Charts:
-
-Interactive charts with support/resistance levels, breakouts, and breakdowns.
-
-Volume-Price Correlation:
-
-Scatter plots to visualize the relationship between trading volume and price changes.
-
-Daily Return Distribution:
-
-Histograms with KDE (Kernel Density Estimation) to analyze stock volatility.
-
-🗂️ Project Structure
-Copy
+## 🗂️ Project Structure
 Stock-Market-Analysis/
-├── script.py                  # Main Python script for data fetching, processing, and visualization.
-├── merged_stock_data.csv      # Merged CSV file containing all stock data.
-├── README.md                  # Project documentation.
-├── requirements.txt           # List of Python dependencies.
-├── images/                    # Folder for storing visualizations (optional).
-└── data/                      # Folder for raw and processed data (optional).
-🚀 How to Use
-Step 1: Set Up the Environment
-Clone the repository:
+├── script.py # Main Python script for data fetching, processing, and visualization.
+├── merged_stock_data.csv # Merged CSV file containing all stock data.
+├── README.md # Project documentation.
+├── requirements.txt # List of Python dependencies.
+├── images/ # Folder for storing visualizations (optional).
+└── data/ # Folder for raw and processed data (optional).
 
-bash
 Copy
-git clone https://github.com/your-username/Stock-Market-Analysis.git
+
+---
+
+## 🚀 How to Use
+
+### Step 1: Set Up the Environment
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/Stock-Market-Analysis.git
 Install the required Python libraries:
 
 bash
